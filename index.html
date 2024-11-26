@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Piece Showcase</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>One Piece Showcase</h1>
+</header>
+
+<img id="banner" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9c2e9d59-ee54-490e-bf96-5497f587844f/dghv910-fead846e-1076-4ae0-b86d-9451c670bc66.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzljMmU5ZDU5LWVlNTQtNDkwZS1iZjk2LTU0OTdmNTg3ODQ0ZlwvZGdodjkxMC1mZWFkODQ2ZS0xMDc2LTRhZTAtYjg2ZC05NDUxYzY3MGJjNjYuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.cwKXUKd53MxuupDVvXPqtsL91qtQNtxThFrw7pBeYJU" alt="One Piece Banner">
+
+<div class="container">
+    <!-- Character List -->
+    <div class="character" onclick="openModal('luffyModal')">
+        <img src="https://images4.alphacoders.com/135/1352902.jpeg" alt="Luffy">
+        <h3>Luffy</h3>
+        <p>Monkey D. Luffy é o capitão dos Piratas do Chapéu de Palha, cujo objetivo é se tornar o Rei dos Piratas.</p>
+    </div>
+    <div class="character" onclick="openModal('zoroModal')">
+        <img src="https://4kwallpapers.com/images/walls/thumbs_3t/10544.jpg" alt="Zoro">
+        <h3>Zoro</h3>
+        <p>Roronoa Zoro é um dos mais poderosos espadachins do mundo e o primeiro a se juntar a Luffy.</p>
+    </div>
+    <div class="character" onclick="openModal('sanjiModal')">
+        <img src="https://images5.alphacoders.com/135/1353994.jpeg" alt="Sanji">
+        <h3>Sanji</h3>
+        <p>Sanji é o cozinheiro do navio dos Chapéus de Palha e um dos lutadores mais habilidosos do grupo.</p>
+    </div>
+
+    <!-- YouTube Links -->
+    <div class="youtube-links">
+        <h2>Assista aos Episódios</h2>
+        <div style="display: flex; justify-content: space-around; margin-bottom: 20px;">
+            <a href="https://youtu.be/6wzdCZ1ZwUA" target="_blank">Luffy vs Kaido - Episódio 1072
+                <div class="thumbnail">
+                    <img src="https://i.ytimg.com/vi/6wzdCZ1ZwUA/hqdefault.jpg" alt="Luffy vs Kaido">
+                </div>
+            </a>
+            <a href="https://youtu.be/Zuu6ClXRabE" target="_blank">Zoro vs King - Episódio 1068
+                <div class="thumbnail">
+                    <img src="https://i.ytimg.com/vi/Zuu6ClXRabE/hqdefault.jpg" alt="Zoro vs King">
+                </div>
+            </a>
+            <a href="https://youtu.be/3F39wwHPLQU" target="_blank">Sanji vs Queen - Episódio 1069
+                <div class="thumbnail">
+                    <img src="https://i.ytimg.com/vi/3F39wwHPLQU/hqdefault.jpg" alt="Sanji vs Queen">
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="form-container">
+        <h2>Entre em Contato</h2>
+        <form id="contactForm">
+            <input type="text" id="name" name="name" placeholder="Seu Nome" required><br>
+            <input type="email" id="email" name="email" placeholder="Seu E-mail" required><br>
+            <textarea id="message" name="message" placeholder="Sua Mensagem" rows="4" required></textarea><br>
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="successMessage" class="success-message">Mensagem enviada com sucesso! Obrigado pelo seu contato.</div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
